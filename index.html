@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Facebook.png" type="image/x-icon">
+    <title>Facebook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+        }
+
+        body {
+            background-color: #F0F2F5;
+            overflow-x: hidden;
+        }
+
+        a {
+            font-family: sans-serif;
+            display: table;
+            margin: auto;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            width: 72%;
+        }
+
+        h1 {
+            font-family: 'Viga', sans-serif;
+            font-size: 54px;
+            color: #1877F2;
+        }
+
+        p {
+            font-family: sans-serif;
+        }
+
+        .container .fb-col:first-child {
+            width: 58%;
+            padding: 12vh 0;
+        }
+
+        .container .fb-col:last-child {
+            width: 42%;
+        }
+
+        .container .fb-col:first-child p {
+            font-size: 28px;
+            font-family: sans-serif;
+            width: 90%;
+        }
+
+        .form {
+            width: 372px;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            padding: 15px 15px 25px 15px;
+            border-radius: 8px;
+            box-shadow: 0px 3px 8px #00000038;
+        }
+
+        input {
+            display: block;
+            width: 90%;
+            border: 1px solid transparent;
+            padding: 15px;
+            box-shadow: 0px 0px 0px 0.5px rgb(66 48 48 / 50%);
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 0 auto 10px auto;
+        }
+
+        input:focus {
+            box-shadow: none;
+            border: 1px solid #1877F2;
+        }
+
+        input[type='button'] {
+            width: 100%;
+            margin: 5px auto 18px auto;
+            background-color: #1877F2;
+            font-size: 18px;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type='button']:hover {
+            background-color: #0265e7;
+        }
+
+        hr {
+            width: 100%;
+            opacity: 50%;
+            margin: 22px auto;
+        }
+
+        .new {
+            color: #fff;
+            background-color: #36A420;
+            padding: 15px;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+
+        .new:hover {
+            text-decoration: none;
+            background-color: #1e9407;
+        }
+
+        .fb-col:last-child p {
+            font-size: 14px;
+            margin-top: 32px;
+            text-align: center;
+        }
+
+        span a {
+            display: inline-block;
+            color: #000;
+            font-weight: 600;
+        }
+
+        /* responsive */
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100%;
+                display: block;
+                max-width: auto;
+            }
+
+            .fb-col {
+                width: 100% !important;
+            }
+
+            .form {
+                width: 80%;
+                margin: auto;
+            }
+
+            .fb-col:first-child {
+                text-align: center;
+            }
+
+            .fb-col:first-child p {
+                font-size: 20px !important;
+                width: 80%;
+                margin: 0px auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="fb-col">
+            <h1>facebook</h1>
+            <p>Facebook helps you connect and share with the people in your life.</p>
+        </div>
+        <div class="fb-col">
+            <div class="form">
+                <input type="email" type="number" placeholder="Enter email address or phone number" required>
+                <input type="password" placeholder="Password" required>
+                <input type="button" value="Log In">
+                <a href="#">Forgotten password?</a>
+                <hr>
+                <a class="new" href="#">Create New Account</a>
+            </div>
+            <p><span><a href="#">Create a Page</a></span> for a celebrity, band or business.</p>
+        </div>
+    </div>
+</body>
+
+</html>
